@@ -15,3 +15,7 @@ test("caeserCipher wrapAround", ()=>{
 test("caeserCipher withCap", ()=>{
   expect(caeserCipher.encode('DIZZ')).toBe('EJAA')
 })
+
+test("caeserCipher symbolException", ()=>{
+  expect(caeserCipher.encode("code,red")).toBe("dpef,sfe")
+})
